@@ -1,0 +1,133 @@
+.containt{
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /*background-color: rgb(114, 106, 106);*/
+}
+table {
+   width: 50%;
+    color: aliceblue;
+    border-spacing:0px;
+    margin-top: 0px;
+  
+}
+ table td{
+    padding: 5px;
+    border: 1px solid rgb(37, 36, 36);
+    background-color: rgb(19, 17, 17);
+    color: peachpuff;
+    text-align: center;
+    
+}
+caption {
+  color: black; 
+  font-weight: bolder;
+  background-color: yellow;
+  padding: 10px;
+}
+table thead td {
+  color: blanchedalmond;
+  background-color: rgb(238, 158, 11);
+  text-align: center;
+  font-weight: bold;
+  border-color: chocolate;
+}
+.create-menu {
+  display:flex;
+  justify-content: center;
+  width: 25%;
+  padding: 50px 5px;
+  background-image: linear-gradient(to left,yellow,chocolate,rgb(241, 241, 79),black,rgb(241, 241, 79));
+  border: 1px solid rgb(37, 36, 36);
+  border-radius: 10px;
+  transform:translate(270%, 100%);
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  
+}
+ 
+
+a.btn-create{
+  padding: 10px 40px;
+    border: 2px solid rgb(19 17 17);
+    border-radius: 20px;
+    background-color: yellow;
+    position: relative;
+    transform: translateX(250px);
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-edit{
+  border-radius: 15%;
+text-decoration: none;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color:yellow;
+  color:rgb(168, 119, 28);
+  padding: 3px;
+  width: 5%;
+}
+a.btn-delete,input.btn-delete{
+  border-radius: 15%;
+  cursor: pointer;
+  border: 2px solid black;
+  color: blanchedalmond;
+  background-color: rgb(238, 158, 11);
+  padding: 3px;
+}
+
+
+   
+
+img{
+  width: 70px;
+  height: 70px;
+}
+body
+{
+background-color:white;
+}
+.load{
+  display: flex;
+  justify-content: center;
+  transform: translate(-15px, 100px);
+  background-color:white;
+}
+.load div{
+  width: 20px;
+  height: 20px;
+  background-color:orange;
+  border-radius: 50%;
+  margin:0px 5px;
+  animation-name: up-and-down;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load .tow{
+  animation-delay: 0.3s;
+  background-color: yellow;
+}
+.load .three{
+  animation-delay: 0.6s;
+  background-color: yellowgreen;
+}
+@keyframes up-and-down{
+  to{
+    opacity: 0.5;
+    transform: translateY(-30px);
+  }
+  
+}
+@media(min-whidth:767 px)
+{
+ 
+  .containt{
+    flex-direction: row;
+  }
+  
+ 
+ 
+}
